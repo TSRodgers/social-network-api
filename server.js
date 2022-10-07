@@ -8,4 +8,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/social-network-api',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
+
+mongoose.set('debug', 'true');
+
+app.use(require('./routes'));
+
 app.listen(PORT, () => console.log(`App listening on localhost:${PORT}`));
