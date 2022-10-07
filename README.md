@@ -26,7 +26,12 @@
   Clone/Fork the repo and/or email me.
 
   ## Tests
-  later
+  ### USER 
+  - Create a new user: `POST /api/users`
+  - Get all users: `GET /api/users`
+  - Get a single user by id: `GET /api/users/:userId`
+  - Update a user by id: `PUT /api/users/:userId`
+  - Delete a user by id: `DELETE /api/users/:userId`
 
   ## Questions
   If you have any questions about this projects, please contact me directly at tyler.rodgers74@gmail.com. You can view more of my projects at https://github.com/TSRodgers.
