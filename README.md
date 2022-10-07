@@ -18,7 +18,7 @@
 
   ## Usage 
   After installation; Run `npm start` in the integrated terminal, Open Insomia and use the calls listed in the tests section below at `localhost:3001`.
-  A walkthrough video can be seen here -> [SCREENCASTIFY]()
+  A walkthrough video can be seen here -> [SCREENCASTIFY](https://drive.google.com/file/d/19vimNWJViKpjrfIpnSoUEs_6Zip3qHZ3/view)
 
   ## License 
   This project is license under MIT
