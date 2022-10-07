@@ -26,8 +26,8 @@ const thoughtController = {
       .catch(err => res.status(400).json(err));
   },
   // create a new thought
-  createThought({ body }, res) {
-    Thought.create(body)
+  createThought(req, res) {
+    Thought.create(req.body)
     .then(({ _id }) => {
       return User.findOneAndUpdate(
         { _id: req.body.userId },
@@ -75,7 +75,7 @@ const thoughtController = {
     .catch(err => res.status(400).json(err));
   },
   // create a new reaction 
-  addReaction({ params, body }) {
+  addReaction({ params, body }, res) {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
       { $addToSet: { reactions: body }},
